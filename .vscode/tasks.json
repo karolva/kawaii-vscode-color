@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "npm: build:theme",
+            "type": "npm",
+            "script": "build:theme",
+            "problemMatcher": []
+        },
+        {
+            "label": "npm: build:local",
+            "type": "npm",
+            "script": "build:local",
+            "problemMatcher": []
+        },
+        {
+            "label": "npm: build",
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": []
+        }
+    ]
+}

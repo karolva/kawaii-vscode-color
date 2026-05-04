@@ -1,0 +1,75 @@
+{
+    "name": "kawaii-vscode-color",
+    "displayName": "Kawaii VS Code Color",
+    "description": "Dark pink and light green pastel-pink VS Code themes, inspired by SynthWave '84 and Sakura Theme, originally forked from SynthWave '84",
+    "version": "0.1.20",
+    "author": "Karol",
+    "publisher": "karolva",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karolva/kawaii-vscode-color"
+    },
+    "homepage": "https://github.com/karolva/kawaii-vscode-color#readme",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "extensionKind": [
+        "ui"
+    ],
+    "scripts": {
+        "build": "npm run build:local",
+        "build:theme": "node ./scripts/build-color-theme.js",
+        "build:local": "npm run build:theme && node ./scripts/package-local-vsix.js",
+        "vscode:prepublish": "npm run build:theme",
+        "package:vsix": "npm run build:local",
+        "publish:vsce": "npm run build:theme && npx --yes @vscode/vsce publish"
+    },
+    "keywords": [
+        "retro",
+        "80s"
+    ],
+    "categories": [
+        "Themes"
+    ],
+    "activationEvents": [
+        "onStartupFinished",
+        "onCommand:kawaii_synthwave.openSettings"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Kawaii VS Code Color",
+                "uiTheme": "vs-dark",
+                "path": "./themes/kawaii_synthwave-generated-color-theme.json"
+            },
+            {
+                "label": "Kawaii VS Code Color Light",
+                "uiTheme": "vs",
+                "path": "./themes/kawaii_synthwave-generated-color-theme-light.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "kawaii_synthwave.openSettings",
+                "title": "Kawaii VS Code Color: Settings"
+            }
+        ],
+        "configuration": {
+            "title": "Kawaii VS Code Color",
+            "properties": {
+                "kawaii_synthwave.brightness": {
+                    "type": "number",
+                    "default": 0.45,
+                    "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+                },
+                "kawaii_synthwave.disableGlow": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Disable the glow effect, but show Kawaii VS Code Color editor chrome updates"
+                }
+            }
+        }
+    }
+}
