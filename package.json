@@ -1,16 +1,25 @@
 {
     "name": "kawaii-vscode-color",
     "displayName": "Kawaii VS Code Color",
-    "description": "Dark pink and light green pastel-pink VS Code themes, inspired by SynthWave '84 and Sakura Theme, originally forked from SynthWave '84",
-    "version": "0.1.22",
+    "description": "Dark pink and light green pastel-pink VS Code themes with optional glow effects, image-backed editor styling, color customization, Settings Sync, and JSON import/export.",
+    "version": "0.1.23",
     "author": "Karol",
     "publisher": "ITEM-PIXEL",
+    "license": "SEE LICENSE IN LICENSE",
     "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#35172B",
+        "theme": "dark"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/karolva/kawaii-vscode-color"
     },
+    "bugs": {
+        "url": "https://github.com/karolva/kawaii-vscode-color/issues"
+    },
     "homepage": "https://github.com/karolva/kawaii-vscode-color#readme",
+    "pricing": "Free",
     "engines": {
         "vscode": "^1.33.0"
     },
@@ -26,8 +35,20 @@
         "publish:vsce": "npm run build:theme && npx --yes @vscode/vsce publish"
     },
     "keywords": [
-        "retro",
-        "80s"
+        "kawaii",
+        "kawaii Dark",
+        "theme",
+        "color-theme",
+        "dark-theme",
+        "light-theme",
+        "pink",
+        "neon",
+        "glow",
+        "customization",
+        "settings-sync",
+        "background-image",
+        "image",
+        "json"
     ],
     "categories": [
         "Themes"
