@@ -1,6 +1,6 @@
 # Kawaii VS Code Color - VS Code Theme
 
-![Kawaii VS Code Color logo over a cityscape](./banner.png)
+![Kawaii VS Code Color logo over a cityscape](./icon.png)
 
 Kawaii VS Code Color is a dark pink and light green pastel-pink VS Code theme. The visual focus comes first: the dark theme leans into neon pink contrast, while the light theme uses soft green and pastel pink. It is inspired by [SynthWave '84](https://github.com/robb0wen/synthwave-vscode) and [Sakura Theme](https://github.com/mhiratani/theme-sakura), and was originally forked from [SynthWave '84](https://github.com/robb0wen/synthwave-vscode) by [Robb Owen](https://github.com/robb0wen). This fork keeps the optional Neon Dreams workflow and adds dark/light theme customization, image-backed effects, Settings Sync support, and JSON import/export.
 
